@@ -4,22 +4,22 @@ class BankAccount{
     int accNo;
     string holderName;
     float balance;
-    public:
-        void setdata(int no,string name,float bal){
-            this->accNo=no;
-            this->holderName=name;
-            this->balance=bal;
-        }
-        void transfer(BankAccount*b1){
-            float amount;
-            cout<<"Enter the amount to transfer: ";
-            cin>> amount;
-            this->balance=this->balance-amount;
-            b1->balance=b1->balance+amount;
-        }
-        void display(){
-            cout<<this->accNo<<"\t\t"<<this->holderName<<"\t\t"<<this->balance<<endl;
-        }
+public:
+    void setdata(int no,string name,float bal){
+        this->accNo=no;
+        this->holderName=name;
+        this->balance=bal;
+    }
+    void transfer(BankAccount*b1){
+        float amount;
+        cout<<"Enter the amount to transfer: ";
+        cin>> amount;
+        this->balance=this->balance-amount;
+        b1->balance=b1->balance+amount;
+    }
+    void display(){
+        cout<<this->accNo<<"\t\t"<<this->holderName<<"\t\t"<<this->balance<<endl;
+    }
 };
 int main(){
     BankAccount b1,b2;
