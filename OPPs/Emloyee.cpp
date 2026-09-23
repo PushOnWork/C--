@@ -11,16 +11,9 @@ public:
         this->empSalary=sal;
     }
     void larger(Employee e1,Employee e2){
-        if(e1.empSalary>=e2.empSalary){
-            this->empId=e1.empId;
-            this->empName=e1.empName;
-            this->empSalary=e1.empSalary;
-        }
-        else{
-            this->empId=e2.empId;
-            this->empName=e2.empName;
-            this->empSalary=e2.empSalary;
-        }
+            this->empId=(e1.empSalary>=e2.empSalary)?e1.empId:e2.empId;
+            this->empName=(e1.empSalary>=e2.empSalary)?e1.empName:e2.empName;
+            this->empSalary=(e1.empSalary>=e2.empSalary)?e1.empSalary:e2.empSalary;
     }
     void display(){
         cout<<this->empId<<"\t\t"<<this->empName<<"\t\t"<<this->empSalary<<endl;
