@@ -14,7 +14,7 @@ public:
         this->m2 = b;
         this->m3 = c;
         this->total = (this->m1+this->m2+this->m3);
-        this->avg = (float)this->total/3;
+        this->avg = this->total/3.0;
     }
     void display(student s[],int size){
 
