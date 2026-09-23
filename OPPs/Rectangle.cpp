@@ -2,20 +2,20 @@
 using namespace std;
 class Rectangle{
     int length,breadth;
-    public:
-        void setdata(int l,int b){
-            this->length=l;
-            this->breadth=b;
-        }
-        Rectangle add(Rectangle r1,Rectangle r2){
-            Rectangle r3;
-            r3.length=r1.length+r2.length;
-            r3.breadth=r1.breadth+r2.breadth;
-            return r3;
-        }
-        void area(){
-            cout<<"Area = "<<this->breadth*this->length<<endl;
-        }
+public:
+    void setdata(int l,int b){
+        this->length=l;
+        this->breadth=b;
+    }
+    Rectangle add(Rectangle r1,Rectangle r2){
+        Rectangle r3;
+        r3.length=r1.length+r2.length;
+        r3.breadth=r1.breadth+r2.breadth;
+        return r3;
+    }
+    void area(){
+        cout<<"Area = "<<this->breadth*this->length<<endl;
+    }
 };
 int main(){
     Rectangle r1,r2,r3;
