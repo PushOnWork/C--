@@ -6,7 +6,7 @@ class student{
     int m1, m2, m3;
     int total;
     float avg;
-    public:
+public:
     void setdata(string n, int r, int a, int b, int c){
         this->name = n;
         this->rollno = r;
