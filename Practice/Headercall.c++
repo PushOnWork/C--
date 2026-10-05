@@ -19,7 +19,7 @@ int main(){
     cout<<"Original Array: ";
     display(arr,n);
     mergeSort(arr,0,n-1);
-    cout<< "Sorted Array";
+    cout<< "Sorted Array: ";
     display(arr,n);
     return 0;
 }
