@@ -1,5 +1,5 @@
 #include<iostream>
-#include"D:\C++\Practice\MergeSort.h++"
+#include"D:\C++\Practice\MergeSort.hpp"
 using namespace std;
 void display(int arr[],int n){
     for(int i=0;i<n;i++){
